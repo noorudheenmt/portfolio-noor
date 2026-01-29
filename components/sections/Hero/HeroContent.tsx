@@ -92,4 +92,4 @@ const HeroContent: FC = () => {
   )
 }
 
-export default HeroContent
+export default HeroContent;
