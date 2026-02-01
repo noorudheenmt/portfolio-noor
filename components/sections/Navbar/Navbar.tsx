@@ -15,6 +15,7 @@ import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/hooks/use-toogle";
 import {
   FaBlog,
+  FaFile,
   FaBriefcase,
   FaCode,
   FaEnvelope,
@@ -29,6 +30,7 @@ export function Navbar() {
   const navItems = [
     { name: "About", link: "#about", icon: <FaUser /> },
     { name: "Skills", link: "#skills", icon: <FaCode /> },
+    { name: "Resume", link: "#resume", icon: <FaFile /> },
     { name: "Experience", link: "#experience", icon: <FaBriefcase /> },
     { name: "Projects", link: "#projects", icon: <FaProjectDiagram /> },
     { name: "Blogs", link: "#blogs", icon: <FaBlog /> },
