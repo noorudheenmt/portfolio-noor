@@ -1,7 +1,9 @@
-import Hero from '@/components/sections/Hero/Hero';
+import Hero from '@/components/sections/hero/Hero';
 import Skills from '@/components/sections/skills/Skills';
 import ResumeSection from '@/components/sections/resume/Resume';
-import Timeline from '@/components/sections/Timeline/Timeline';
+import Timeline from '@/components/sections/timeline/Timeline';
+import Projects from '@/components/sections/projects/Projects';
+import Education from '@/components/sections/education/Education';
 
 export default function Home() {
   return (
@@ -11,8 +13,9 @@ export default function Home() {
         <Skills />
         <ResumeSection />
         <Timeline />
-        {/*<Projects />
-        <BlogsSection />
+        <Projects />
+        <Education />
+        {/*<BlogsSection />
         <ContactUs />
         <Toaster position="bottom-right" /> */}
       </div>

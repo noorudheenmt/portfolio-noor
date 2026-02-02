@@ -21,6 +21,7 @@ import {
   FaEnvelope,
   FaProjectDiagram,
   FaUser,
+  FaGraduationCap,
 } from "react-icons/fa";
 
 export function Navbar() {
@@ -33,6 +34,7 @@ export function Navbar() {
     { name: "Resume", link: "#resume", icon: <FaFile /> },
     { name: "Experience", link: "#experience", icon: <FaBriefcase /> },
     { name: "Projects", link: "#projects", icon: <FaProjectDiagram /> },
+    { name: "Education", link: "#education", icon: <FaGraduationCap /> },
     { name: "Blogs", link: "#blogs", icon: <FaBlog /> },
   ];
 
