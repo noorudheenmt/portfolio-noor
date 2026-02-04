@@ -4,6 +4,7 @@ import ResumeSection from '@/components/sections/resume/Resume';
 import Timeline from '@/components/sections/timeline/Timeline';
 import Projects from '@/components/sections/projects/Projects';
 import Education from '@/components/sections/education/Education';
+import Certificate from '@/components/sections/certificates/Certificate';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Timeline />
         <Projects />
         <Education />
+        <Certificate />
         {/*<BlogsSection />
         <ContactUs />
         <Toaster position="bottom-right" /> */}
