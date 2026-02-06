@@ -5,6 +5,8 @@ import Timeline from '@/components/sections/timeline/Timeline';
 import Projects from '@/components/sections/projects/Projects';
 import Education from '@/components/sections/education/Education';
 import Certificate from '@/components/sections/certificates/Certificate';
+import BlogsSection from '@/components/sections/blogs/Blogs';
+import ContactUs from '@/components/sections/contact/ContactUs';
 
 export default function Home() {
   return (
@@ -17,9 +19,9 @@ export default function Home() {
         <Projects />
         <Education />
         <Certificate />
-        {/*<BlogsSection />
+        <BlogsSection />
         <ContactUs />
-        <Toaster position="bottom-right" /> */}
+        {/*<Toaster position="bottom-right" /> */}
       </div>
     </div>
   )
