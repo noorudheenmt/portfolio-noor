@@ -40,7 +40,6 @@ const ContactUs: FC = () => {
     e.preventDefault()
     setIsSubmitting(true)
     setStatus('')
-
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',

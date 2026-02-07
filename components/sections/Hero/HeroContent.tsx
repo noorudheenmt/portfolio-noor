@@ -1,6 +1,7 @@
 'use client';
 import { FC } from 'react';
 import { motion } from 'framer-motion';
+import { config } from "../../../config";
 import { FaGithub } from 'react-icons/fa';
 import { Badge } from '@/components/ui/badge';
 import { TbDeviceLaptop } from 'react-icons/tb';
@@ -82,7 +83,7 @@ const HeroContent: FC = () => {
           variant="dark"
           className="flex items-center gap-2 shadow outline"
           aria-label="github"
-          href={process.env.NEXT_PUBLIC_GITHUB_URL}
+          href={config.frontend.githubUrl}
         >
           <FaGithub className="mr-1" />
           <span>GitHub</span>

@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { config } from "../../../config";
 import { RxGithubLogo } from "react-icons/rx";
 import { FC, useEffect, useState } from "react";
 import { FaLinkedin, FaTwitter, FaInstagram, FaWhatsapp } from "react-icons/fa";
@@ -7,27 +8,27 @@ import { FaLinkedin, FaTwitter, FaInstagram, FaWhatsapp } from "react-icons/fa";
 const Footer: FC = () => {
   const socialLinks = [
     {
-      href: process.env.NEXT_PUBLIC_GITHUB_URL,
+      href: config.frontend.githubUrl,
       icon: <RxGithubLogo className="w-5 h-5" />,
       label: "GitHub",
     },
     {
-      href: process.env.NEXT_PUBLIC_LINKEDIN_URL,
+      href: config.frontend.linkedinUrl,
       icon: <FaLinkedin className="w-5 h-5" />,
       label: "LinkedIn",
     },
     {
-      href: process.env.NEXT_PUBLIC_TWITTER_URL,
+      href: config.frontend.twitterUrl,
       icon: <FaTwitter className="w-5 h-5" />,
       label: "Twitter",
     },
     {
-      href: process.env.NEXT_PUBLIC_INSTAGRAM_URL,
+      href: config.frontend.instagramUrl,
       icon: <FaInstagram className="w-5 h-5" />,
       label: "Instagram",
     },
     {
-      href: process.env.NEXT_PUBLIC_WHATSAPP_URL,
+      href: config.frontend.whatsappUrl,
       icon: <FaWhatsapp className="w-5 h-5" />,
       label: "WhatsApp",
     },

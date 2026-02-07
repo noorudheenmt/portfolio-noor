@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ TITLE }}</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        font-family: 'Lato', sans-serif;
+        color: #000;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      }
+      .header {
+        background-color: #161a39;
+        padding: 40px 20px 20px;
+        text-align: center;
+        color: #ffffff;
+      }
+      .header img {
+        width: 58px;
+        height: auto;
+        margin-bottom: 15px;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 28px;
+        font-weight: 700;
+      }
+      .content {
+        padding: 30px 20px;
+        color: #666666;
+        line-height: 1.6;
+      }
+      .button {
+        display: inline-block;
+        background-color: #161a39;
+        color: #ffffff;
+        padding: 12px 25px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 20px 0;
+      }
+      .footer {
+        background-color: #18163a;
+        color: #ecf0f1;
+        padding: 20px;
+        font-size: 14px;
+        text-align: center;
+      }
+      .footer a {
+        color: #ecf0f1;
+        text-decoration: none;
+        margin: 0 5px;
+      }
+      .note {
+        font-size: 12px;
+        color: #888888;
+        text-align: center;
+        margin-top: 20px;
+      }
+      @media (max-width: 620px) {
+        .container {
+          width: 95% !important;
+        }
+        .header h1 {
+          font-size: 24px;
+        }
+        .button {
+          width: 100%;
+          text-align: center;
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <img src="https://ui-avatars.com/api/?name=Mohammed+Noorudheen&background=161a39&color=ffffff&size=120" alt="Mohammed Noorudheen MT" />
+        <h1>{{ TITLE }}</h1>
+      </div>
+
+      <!-- Content -->
+      <div class="content">{{ CONTENT }}</div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>Ahmedabad, India | +91 8075754525 | Portfolio</p>
+        <div>
+          <a href="https://www.instagram.com/_mr_gladius_/" target="_blank">Instagram</a> |
+          <a href="https://www.linkedin.com/in/mohammed-noorudheen-mt/" target="_blank">LinkedIn</a>
+        </div>
+        <p>Portfolio &copy; All Rights Reserved</p>
+      </div>
+    </div>
+  </body>
+</html>
