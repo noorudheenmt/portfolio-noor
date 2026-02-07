@@ -40,7 +40,7 @@ export default function BlogsSection() {
   return (
     <section id="blogs" className="w-full py-12 dark:bg-neutral-950">
       <div className="mx-auto max-w-5xl px-4">
-        <h2 className="mb-8 text-3xl font-bold text-center text-zinc-800 dark:text-zinc-100">
+        <h2 className="text-3xl sm:text-4xl font-bold text-primary tracking-tight">
           Blogs
         </h2>
 

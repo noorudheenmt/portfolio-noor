@@ -83,7 +83,7 @@ const Education = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h1 className="text-4xl font-bold md:text-5xl">Education</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold text-primary tracking-tight">Education</h1>
           <p className="mx-auto mt-4 max-w-3xl text-base font-semibold italic text-muted-foreground">
             Academic journey that laid the foundation of my career.
           </p>

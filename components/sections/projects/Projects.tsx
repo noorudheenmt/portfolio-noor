@@ -57,7 +57,7 @@ const Projects = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-4xl font-bold md:text-5xl">My Projects</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold text-primary tracking-tight">My Projects</h1>
           <p className="mx-auto mt-4 max-w-3xl text-base font-semibold italic text-muted-foreground md:text-lg">
             A collection of innovative projects showcasing technical expertise &
             creativity.

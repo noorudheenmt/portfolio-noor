@@ -111,7 +111,7 @@ export const TimelineElement: FC<{ item: TimelineItem; index: number }> = ({
   </div>
 );
 
-const Timeline: FC = () => {
+const Experience: FC = () => {
   const timelineContent = timelineData.map((item) => ({
     title: item.date,
     content: <TimelineElement key={item.id} item={item} index={item.id} />,
@@ -129,12 +129,11 @@ const Timeline: FC = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h1 className="text-5xl font-bold tracking-tight text-primary">
-            Professional Experience & Projects
+          <h1 className="text-3xl sm:text-4xl font-bold text-primary tracking-tight">
+            Professional Experience
           </h1>
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto text-base">
-            Highlights of my career and key projects showcasing my skills &
-            impact.
+           My professional journey and contributions in real-world projects.
           </p>
         </motion.div>
 
@@ -146,4 +145,4 @@ const Timeline: FC = () => {
   );
 };
 
-export default Timeline;
+export default Experience;

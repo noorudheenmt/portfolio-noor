@@ -86,7 +86,7 @@ const Certificates = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h1 className="text-4xl font-bold md:text-5xl">Certifications</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold text-primary tracking-tight">Certifications</h1>
           <p className="mx-auto mt-4 max-w-3xl text-base font-semibold italic text-muted-foreground">
             Professional certifications that validate my skills and continuous
             learning.
