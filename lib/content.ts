@@ -29,7 +29,8 @@ export const emailContents = {
 
     <p>
       Regards,<br />
-      <strong>Mohammed Noorudheen MT</strong>
+      <strong>Mohammed Noorudheen MT</strong><br />
+      <strong>Software Engineer</strong>
     </p>
   `,
 } as const;

@@ -194,6 +194,7 @@ const ContactUs: FC = () => {
               animate="visible"
             >
               <form
+                suppressHydrationWarning
                 onSubmit={handleSubmit}
                 className="space-y-5"
                 aria-label="Contact Form"
