@@ -83,7 +83,7 @@ const ContactUs: FC = () => {
       
 
       // Remove previous toast if exists
-      if (toastId) toast.dismiss(toastId);
+      if (toastId) toast.dismiss(String(toastId));
 
       // Show new toast and save its id
       toastId = toast.success(`${label} copied!`, {

@@ -1,6 +1,6 @@
 'use client';
-import Footer from '@/components/sections/Footer/Footer';
-import { Navbar } from '@/components/sections/Navbar/Navbar';
+import Footer from '@/components/sections/footer/Footer';
+import { Navbar } from '@/components/sections/navbar/Navbar';
 
 export default function PublicLayout({ children }: { children: React.ReactNode }) {
   return (
