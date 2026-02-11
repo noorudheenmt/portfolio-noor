@@ -42,7 +42,18 @@ const getNextLogIndex = (dir: string, apiName: string): number => {
 };
 
 // Logger Factory
-export const createLogger = (apiName: string): Logger => {
+export const createLogger = (apiName: string): 
+  if (process.env.NODE_ENV === "production") {
+    return (message: string, type: LogInput = "info"): void => {
+      if (type instanceof Error) {
+        console.error(`[${apiName}]`, message, type.stack || type.message);
+      } else {
+        console.log(`[${apiName}] ${type.toUpperCase()}:`, message);
+      }
+    };
+  }
+
+ 
   const baseDir = path.resolve();
   const logDir = path.join("logs", getToday(), apiName);
   const fullPath = path.join(baseDir, logDir);
