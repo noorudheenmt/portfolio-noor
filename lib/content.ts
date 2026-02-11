@@ -23,12 +23,12 @@ export const emailContents = {
     <p>Hi ${name},</p>
 
     <p>
-      Thank you for contacting me through my portfolio.
-      I’ve received your message and will get back to you soon.
+      Thank you for reaching out through my portfolio website.
+      I have received your message and will get back to you within 24 hours.
     </p>
 
     <p>
-      Regards,<br />
+      Best regards,<br />
       <strong>Mohammed Noorudheen MT</strong><br />
       <strong>Software Engineer</strong>
     </p>

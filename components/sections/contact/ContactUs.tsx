@@ -148,9 +148,9 @@ const ContactUs: FC = () => {
               </p>
 
               <div className="space-y-5 text-foreground">
-                <div className="flex items-center gap-3">
-                  <FaEnvelope className="text-primary text-lg" />
-                  <span className="text-sm font-medium select-text">
+                <div className="flex items-center gap-3 flex-wrap">
+                  <FaEnvelope className="text-primary text-lg shrink-0" />
+                  <span className="text-xs sm:text-sm font-medium select-text break-all">
                     mohammednoorudheenmt@gmail.com
                   </span>
                   <button
@@ -165,7 +165,7 @@ const ContactUs: FC = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <FaSquarePhone className="text-primary text-lg" />
-                  <span className="text-sm font-medium select-text">
+                  <span className="text-xs sm:text-sm font-medium select-text break-all">
                     +91 8075754525
                   </span>
                   <button
@@ -180,7 +180,7 @@ const ContactUs: FC = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <FaMapMarkerAlt className="text-primary text-lg" />
-                  <span className="text-sm font-medium select-text">
+                  <span className="text-xs sm:text-sm font-medium select-text break-all">
                     Ahmedabad, India
                   </span>
                 </div>

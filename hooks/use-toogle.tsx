@@ -11,8 +11,36 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 export function ThemeToggle() {
-  const { setTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
+  const [isMobile, setIsMobile] = React.useState(false);
 
+  React.useEffect(() => {
+    const checkScreen = () => setIsMobile(window.innerWidth < 768);
+    checkScreen();
+    window.addEventListener("resize", checkScreen);
+    return () => window.removeEventListener("resize", checkScreen);
+  }, []);
+
+  const toggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+
+  // Mobile → Direct Toggle
+  if (isMobile) {
+    return (
+      <Button
+        variant="outline"
+        size="icon"
+        className="rounded-full z-50 h-7 w-7 p-0"
+        onClick={toggleTheme}
+      >
+        <Sun className="h-3 w-3 dark:hidden" />
+        <Moon className="h-3 w-3 hidden dark:block" />
+      </Button>
+    );
+  }
+
+  // Desktop → Dropdown
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -28,9 +56,6 @@ export function ThemeToggle() {
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("dark")}>
           Dark
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")}>
-          System
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

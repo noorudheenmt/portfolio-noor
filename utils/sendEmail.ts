@@ -42,7 +42,6 @@ export const sendContactEmails = async (
     log("email send to visitor started");
     log("loadEmailTemplate function call started");
     const autoReplyHtml = loadEmailTemplate("email.html", {
-      TITLE: "Thanks for contacting me 👋",
       CONTENT: emailContents.contactAutoReply(payload.name),
     });
     log("loadEmailTemplate function call ended");
@@ -51,7 +50,7 @@ export const sendContactEmails = async (
     await transporter.sendMail({
       from: `"Mohammed Noorudheen" <${config.backend.emailUserName}>`,
       to: payload.email,
-      subject: "I’ve received your message",
+      subject: "Thank you for contacting me",
       html: autoReplyHtml,
     });
     log(`Contact emails sent for ${payload.email}`);
