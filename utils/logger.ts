@@ -50,7 +50,7 @@ export const createLogger = (apiName: string):
       } else {
         console.log(`[${apiName}] ${type.toUpperCase()}:`, message);
       }
-    };
+    }; 
   }
 
  
