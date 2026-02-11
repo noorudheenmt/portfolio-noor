@@ -1,3 +1,4 @@
+export const runtime = "nodejs";
 import { createLogger } from "@/utils/logger";
 import { sendContactEmails } from "@/utils/sendEmail";
 import { NextRequest, NextResponse } from "next/server";
