@@ -1,4 +1,4 @@
-import fs from "fs"; 
+import fs from "fs";
 import path from "path";
 import type { LogLevel, LogInput, Logger } from "../types/logger.types";
 
@@ -42,7 +42,10 @@ const getNextLogIndex = (dir: string, apiName: string): number => {
 };
 
 // Logger Factory
-export const createLogger = (apiName: string): 
+export const createLogger = (
+  apiName: string,
+): ((message: string, type?: LogInput) => void) => {
+  
   if (process.env.NODE_ENV === "production") {
     return (message: string, type: LogInput = "info"): void => {
       if (type instanceof Error) {
@@ -50,10 +53,9 @@ export const createLogger = (apiName: string):
       } else {
         console.log(`[${apiName}] ${type.toUpperCase()}:`, message);
       }
-    }; 
+    };
   }
 
- 
   const baseDir = path.resolve();
   const logDir = path.join("logs", getToday(), apiName);
   const fullPath = path.join(baseDir, logDir);
