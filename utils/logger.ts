@@ -1,4 +1,4 @@
-import fs from "fs";
+import fs from "fs"; 
 import path from "path";
 import type { LogLevel, LogInput, Logger } from "../types/logger.types";
 
